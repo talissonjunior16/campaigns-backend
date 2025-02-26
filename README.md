@@ -66,6 +66,13 @@ O banco de dados é gerenciado via **Docker Compose**. Para iniciá-lo, execute:
 $ docker compose up -d
 ```
 
+Inicie o projeto
+
+```bash
+# Ao iniciar o projeto o mesmco criará as tabelas necessárias
+$ npm run start
+```
+
 Em seguida, execute as migrações para popular a base de dados:
 
 ```bash
@@ -73,7 +80,9 @@ Em seguida, execute as migrações para popular a base de dados:
 $ npm run migration:run
 ```
 
-Isso garantirá que a tabela de categorias seja populada corretamente.
+Isso garantirá que a tabela de categorias seja populada corretamente (Decide criar uma tabela para as categorias pré definidas)
+
+Caminho da Seed: src\infrastructure\database\migrations\1687891234567-seed-categories.ts
 
 ---
 
