@@ -27,6 +27,11 @@ Foram feitas algumas adaptações para padronização, utilizando **nomes em ing
 
 ---
 
+## Referências e Inspirações
+
+- [Clean Architecture](https://github.com/jasontaylordev/CleanArchitecture)
+- [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+
 ## 🚀 Requisitos
 
 Antes de iniciar, certifique-se de ter os seguintes itens instalados:
