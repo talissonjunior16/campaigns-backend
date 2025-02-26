@@ -43,7 +43,7 @@ Clone o repositório e instale as dependências do projeto:
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/TalissonJunior/campaigns-backend.git
+$ git clone https://github.com/talissonjunior16/campaigns-backend.git
 $ cd campaigns-backend
 
 # Instale as dependências
