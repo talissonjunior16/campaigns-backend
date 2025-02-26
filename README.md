@@ -57,7 +57,7 @@ $ npm install
 
 ---
 
-## 🐘 Configuração do Banco de Dados
+## 🐘 Configuração do Banco de Dados - Inicialização do Projeto
 
 O banco de dados é gerenciado via **Docker Compose**. Para iniciá-lo, execute:
 
