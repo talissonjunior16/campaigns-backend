@@ -26,6 +26,22 @@ O projeto foi desenvolvido seguindo os requisitos abaixo:
 Foram feitas algumas adaptações para padronização, utilizando **nomes em inglês** para as propriedades e **seguindo uma convenção para o banco de dados**.
 
 ---
+---
+
+## 📌 Banco de Dados e Seed de Categorias
+
+- **Ao acessar a API pela primeira vez (`/`)**, o banco de dados será inicializado e automaticamente **populará a tabela de categorias** se elas ainda não existirem.
+- Isso garante que as categorias básicas estejam disponíveis sem a necessidade de inserção manual.
+
+**Categorias adicionadas automaticamente no primeiro acesso:**
+- Eletrônicos
+- Moda
+- Esportes
+- Alimentos
+- Serviços
+
+---
+
 
 ## Referências e Inspirações
 
@@ -57,7 +73,7 @@ $ npm install
 
 ---
 
-## 🐘 Configuração do Banco de Dados - Inicialização do Projeto
+## Inicialização do Projeto
 
 O banco de dados é gerenciado via **Docker Compose**. Para iniciá-lo, execute:
 
@@ -72,18 +88,6 @@ Inicie o projeto
 # Ao iniciar o projeto o mesmco criará as tabelas necessárias
 $ npm run start
 ```
-
-Em seguida, execute as migrações para popular a base de dados:
-
-```bash
-# Executar as migrações
-$ npm run migration:run
-```
-
-Isso garantirá que a tabela de categorias seja populada corretamente (Decide criar uma tabela para as categorias pré definidas)
-
-Caminho da Seed: src\infrastructure\database\migrations\1687891234567-seed-categories.ts
-
 ---
 
 ## 🚀 Executando a API
@@ -116,7 +120,6 @@ A documentação do Swagger pode ser acessada em:
 http://localhost:3000 OU
 http://localhost:3000/docs
 ```
-
 
 
 ## 🧪 Executando Testes
